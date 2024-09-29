@@ -1,0 +1,8 @@
+<h2>Upload Email File</h2>
+<input type="file" (change)="onFileChange($event)" />
+<div *ngIf="emails.length">
+  <h3>Extracted Emails:</h3>
+  <ul>
+    <li *ngFor="let email of emails">{{ email }}</li>
+  </ul>
+</div>
